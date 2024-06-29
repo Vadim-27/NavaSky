@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'Gilroy';
+  src: url('/fonts/Gilroy-Regular.woff2') format('woff2'),
+       url('/fonts/Gilroy-Regular.woff') format('woff');
+  /* font-weight: normal; */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('/fonts/Gotham-Regular.woff2') format('woff2'),
+       url('/fonts/Gotham-Regular.woff') format('woff');
+  /* font-weight: normal; */
+  font-style: normal;
+}
+
+.gilroy-font {
+  font-family: 'Gilroy', sans-serif;
+}
+
+.gotham-font {
+  font-family: 'Gotham', sans-serif;
+}
