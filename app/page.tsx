@@ -1,7 +1,12 @@
+import { Box } from '@mui/material';
 import OurServices from '@/components/OurServices';
 
 const HomePage = () => {
-    return <OurServices />;
+    return (
+        <Box component="main">
+            <OurServices />
+        </Box>
+    );
 };
 
 export default HomePage;

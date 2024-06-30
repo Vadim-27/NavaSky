@@ -8,17 +8,37 @@ const config: Config = {
     ],
     theme: {
         extend: {
-            backgroundImage: {
-                'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-                'gradient-conic':
-                    'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+            colors: {
+                primary: {
+                    DEFAULT: '#161616',
+                    dark: '#262626',
+                },
+                blue: {
+                    100: '#84c0ef',
+                },
+                violet: {
+                    100: '#b5cafc',
+                },
+                gray: {
+                    100: '#eeeeee',
+                    200: '#c8c8c8',
+                    300: 'a8a8a8',
+                },
+            },
+            fontFamily: {
+                gilroy: '"Gilroy", sans-serif',
+                nunito: '"Nunito Sans", sans-serif',
+                gotham: '"Gotham Book", sans-serif',
+            },
+            screens: {
+                desktop: '1600px',
             },
             transitionProperty: {
                 visibility: 'opacity, visibility',
                 height: 'opacity, height',
             },
         },
+        plugins: [],
     },
-    plugins: [],
 };
 export default config;
