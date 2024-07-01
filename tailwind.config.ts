@@ -33,8 +33,12 @@ const config: Config = {
             screens: {
                 desktop: '1600px',
             },
+            transitionProperty: {
+                visibility: 'opacity, visibility',
+                height: 'opacity, height',
+            },
         },
+        plugins: [],
     },
-    plugins: [],
 };
 export default config;

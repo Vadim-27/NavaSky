@@ -1,0 +1,59 @@
+.accordion {
+    @apply bg-transparent pl-[60px] pr-3 shadow-none;
+
+    &::before {
+        @apply hidden;
+    }
+}
+
+.accordionSummary {
+    @apply static p-0 py-9;
+}
+
+.divider {
+    @apply absolute left-0 top-0 w-full;
+}
+
+.dividerAfter {
+    @apply absolute bottom-0 left-0 w-full;
+}
+
+.number {
+    @apply w-1/5 shrink-0 text-[30px] font-bold leading-[1.2] text-[#161616];
+}
+
+.content {
+    @apply flex justify-between gap-8;
+}
+
+.image {
+    @apply h-0 w-[280px] self-start opacity-0 transition-opacity ease-linear;
+
+    &.visible {
+        @apply h-[211px] opacity-100;
+    }
+}
+
+.title {
+    @apply mb-5 text-[30px] font-bold leading-[1.2] text-[#161616];
+}
+
+.listItem {
+    @apply w-max rounded-[30px] border-[0.5px] border-[#a8a8a8] px-5 py-2;
+}
+
+.arrowIcon {
+    @apply h-[45px] w-[45px] fill-[#84c0ef];
+}
+
+.descriptionHidden {
+    @apply invisible absolute opacity-0;
+}
+
+.descriptionVisible {
+    @apply invisible absolute mt-5 max-w-[376px] font-gotham text-lg text-[#262626] opacity-0 transition-visibility;
+
+    &.visibleText {
+        @apply visible static opacity-100;
+    }
+}
