@@ -1,0 +1,27 @@
+.form {
+    @apply flex flex-1 flex-col gap-[18px] rounded-3xl border border-gray-300 px-12 py-10;
+}
+
+.formWrapper {
+    @apply flex flex-col gap-[18px];
+}
+
+.formField {
+    & div {
+        @apply rounded-t-xl;
+    }
+    & label {
+        @apply font-nunito text-primary-dark;
+    }
+    & input {
+        @apply rounded-xl pb-[6px] pt-6 font-nunito text-primary-dark;
+    }
+}
+
+.submitButton {
+    @apply self-end bg-blue-100 px-[122px] py-3 font-nunito text-[22px] font-bold capitalize rounded-xl;
+
+    &:is(:hover, :focus) {
+        @apply bg-blue-100
+    }
+}

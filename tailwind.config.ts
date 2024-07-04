@@ -26,9 +26,9 @@ const config: Config = {
                 },
             },
             fontFamily: {
-                gilroy: '"Gilroy", sans-serif',
-                nunito: '"Nunito Sans", sans-serif',
-                gotham: '"Gotham Book", sans-serif',
+                gilroy: ['Gilroy', 'sans-serif'],
+                nunito: ['Nunito Sans', 'sans-serif'],
+                gotham: ['Gotham Book', 'sans-serif'],
             },
             transitionProperty: {
                 visibility: 'opacity, visibility',
