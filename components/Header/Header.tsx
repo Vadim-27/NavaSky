@@ -1,4 +1,4 @@
-import { AppBar, Box, Container, Stack } from '@mui/material';
+import { Box, Container, Stack } from '@mui/material';
 import Logo from './Logo';
 import navigationPages from './navigations.json';
 import Navigation from './Navigation';
