@@ -4,12 +4,9 @@ import Accordion from './Accordion';
 
 const OurServices = () => {
     return (
-        <Box component="section" className="py-[60px]">
+        <Box component="section" sx={{ p: '60px 0' }}>
             <Container maxWidth="lg">
-                <Box className="mb-12">
-                    <Title title="Our Services" />
-                </Box>
-
+                <Title title="Our Services" />
                 <Accordion />
             </Container>
         </Box>

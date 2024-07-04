@@ -1,0 +1,31 @@
+.contacts {
+    @apply border border-gray-300 rounded-3xl p-10
+}
+
+.title {
+    @apply mb-6 font-nunito text-[32px] font-bold text-[#191919];
+}
+
+.description {
+    @apply font-nunito text-2xl text-[#191919];
+}
+
+.contactsInfo {
+    @apply flex items-end gap-[106px]
+}
+
+.contactsList {
+    @apply flex flex-col gap-6;
+}
+
+.listItemTitle {
+    @apply font-nunito text-[28px] font-bold text-primary-dark;
+}
+
+.listItemInfo {
+    @apply font-nunito text-2xl font-medium text-primary-dark;
+}
+
+.socialsList {
+    @apply inline-flex gap-6
+}

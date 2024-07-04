@@ -22,13 +22,13 @@ const config: Config = {
                 gray: {
                     100: '#eeeeee',
                     200: '#c8c8c8',
-                    300: 'a8a8a8',
+                    300: '#a8a8a8',
                 },
             },
             fontFamily: {
-                gilroy: '"Gilroy", sans-serif',
-                nunito: '"Nunito Sans", sans-serif',
-                gotham: '"Gotham Book", sans-serif',
+                gilroy: ['Gilroy', 'sans-serif'],
+                nunito: ['Nunito Sans', 'sans-serif'],
+                gotham: ['Gotham Book', 'sans-serif'],
             },
             screens: {
                 desktop: '1600px',
