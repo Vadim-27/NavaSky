@@ -30,12 +30,16 @@ const config: Config = {
                 nunito: ['Nunito Sans', 'sans-serif'],
                 gotham: ['Gotham Book', 'sans-serif'],
             },
-            screens: {
-                desktop: '1600px',
-            },
             transitionProperty: {
                 visibility: 'opacity, visibility',
                 height: 'opacity, height',
+            },
+            screens: {
+                mobile: '375px',
+                tablet: '768px',
+                notebook: '1024px',
+                desktop: '1440px',
+                large: '1600px',
             },
         },
         plugins: [],
