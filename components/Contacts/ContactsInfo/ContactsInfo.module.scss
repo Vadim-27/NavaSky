@@ -1,5 +1,5 @@
 .contacts {
-    @apply border border-gray-300 rounded-3xl p-10
+    @apply border border-gray-300 rounded-3xl p-10 min-h-[503px] flex flex-col justify-between
 }
 
 .title {
