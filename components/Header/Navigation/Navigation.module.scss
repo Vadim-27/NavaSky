@@ -1,0 +1,7 @@
+.navigationList {
+    @apply flex items-center gap-[70px] rounded-xl border border-primary-dark px-8 py-3;
+}
+
+.navigationLink {
+    @apply font-nunito text-lg font-bold text-primary-dark;
+}
