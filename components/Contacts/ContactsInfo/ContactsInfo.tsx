@@ -5,7 +5,7 @@ import Image from 'next/image';
 const ContactsInfo = () => {
     return (
         <Box component="section" className={scss.contacts}>
-            <Box sx={{ mb: '84px' }}>
+            <Box>
                 <Typography component="h3" className={scss.title}>
                     How can we help?
                 </Typography>

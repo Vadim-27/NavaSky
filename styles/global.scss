@@ -1,12 +1,16 @@
 @import 'fonts';
-@import "accordeon";
+@import 'accordeon';
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
+    html {
+        @apply scroll-smooth;
+    }
+
     body {
-        @apply font-gilroy bg-white text-primary;
+        @apply bg-white font-gilroy text-primary;
     }
 }

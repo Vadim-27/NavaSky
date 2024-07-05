@@ -1,4 +1,4 @@
-import { AppBar, Container, Stack } from '@mui/material';
+import { Box, Container, Stack } from '@mui/material';
 import Logo from './Logo';
 import navigationPages from './navigations.json';
 import Navigation from './Navigation';
@@ -7,7 +7,7 @@ import scss from './Header.module.scss';
 
 const Header = () => {
     return (
-        <AppBar position="static" className={scss.header}>
+        <Box className={scss.header}>
             <Container className="max-w-screen-large">
                 <Stack
                     direction="row"
@@ -20,7 +20,7 @@ const Header = () => {
                     <LangSwitcher />
                 </Stack>
             </Container>
-        </AppBar>
+        </Box>
     );
 };
 

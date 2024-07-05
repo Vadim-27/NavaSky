@@ -3,7 +3,7 @@
 }
 
 .formWrapper {
-    @apply flex flex-col gap-[18px];
+    @apply flex flex-col gap-[32px];
 }
 
 .formField {
@@ -15,6 +15,10 @@
     }
     & input {
         @apply rounded-xl pb-[6px] pt-6 font-nunito text-primary-dark;
+    }
+
+    & p {
+        @apply absolute left-0 top-full
     }
 }
 

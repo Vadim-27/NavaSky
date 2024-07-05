@@ -5,7 +5,7 @@ import ContactsForm from './ContactsForm';
 
 const Contacts = () => {
     return (
-        <Box component="section" sx={{ pb: '120px', pt: '60px' }}>
+        <Box component="section" sx={{ pb: '120px', pt: '60px' }} id="contacts">
             <Container className="max-w-screen-large">
                 <Title title="Contacts" />
                 <Stack direction="row" spacing={4}>
