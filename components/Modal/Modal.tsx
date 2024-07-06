@@ -1,6 +1,7 @@
 import { FC, ReactNode } from 'react';
 import Image from 'next/image';
 import { Backdrop, Box, Fade, IconButton, Modal as ReactModal } from '@mui/material';
+import closeIcon from '@/public/icons/close.svg';
 import scss from './Modal.module.scss';
 
 interface ModalProps {
@@ -31,13 +32,7 @@ const Modal: FC<ModalProps> = ({ modalIsOpen, closeModal, children }) => {
                         className={scss.closeButton}
                         onClick={closeModal}
                     >
-                        <Image
-                            src="/icons/close.svg"
-                            width={25}
-                            height={25}
-                            alt="close icon"
-                            style={{ width: 'auto', height: 'auto' }}
-                        />
+                        <Image src={closeIcon} alt="close icon" />
                     </IconButton>
                     {children}
                 </Box>
