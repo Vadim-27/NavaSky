@@ -10,7 +10,9 @@ const OurTeam = () => {
                     <Title title="Our Team" />
                 </Box>
 
-                <TeamList />
+                <Container className="max-w-[1268px]">
+                    <TeamList />
+                </Container>
             </Container>
         </Box>
     );

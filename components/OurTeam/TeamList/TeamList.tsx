@@ -1,14 +1,16 @@
 'use client';
-import { useState } from 'react';
-import { Grid } from '@mui/material';
+import { Fragment, useState } from 'react';
+import { Button, Grid } from '@mui/material';
 import TeamListItem from './TeamListItem';
 import Modal from '@/components/Modal';
 import PersonModal from './PersonModal';
 import teamItems from '../team';
+import scss from './TeamList.module.scss';
 
 const TeamList = () => {
     const [personId, setPersonId] = useState<number | null>(null);
     const [modalIsOpen, setModalIsOpen] = useState<boolean>(false);
+    const [qtyItems, setQtyItems] = useState<number>(6);
 
     const handlePersonId = (id: number) => {
         setPersonId(id);
@@ -20,9 +22,22 @@ const TeamList = () => {
     return (
         <>
             <Grid container columnSpacing={18} rowSpacing={8}>
-                {teamItems.map((item) => (
-                    <TeamListItem key={item.id} {...item} handleClick={handlePersonId} />
+                {teamItems.map((item, index) => (
+                    <Fragment key={item.id}>
+                        {index < qtyItems && (
+                            <TeamListItem {...item} handleClick={handlePersonId} />
+                        )}
+                    </Fragment>
                 ))}
+                {qtyItems < teamItems.length && (
+                    <Button
+                        variant="contained"
+                        onClick={() => setQtyItems(teamItems.length)}
+                        className={scss.loadMore}
+                    >
+                        See more
+                    </Button>
+                )}
             </Grid>
 
             {person && (
