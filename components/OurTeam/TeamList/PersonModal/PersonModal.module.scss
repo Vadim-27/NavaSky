@@ -1,0 +1,27 @@
+.card {
+    @apply bg-transparent shadow-none;
+}
+
+.image {
+    @apply mx-auto mb-8 rounded-[20px];
+}
+
+.content {
+    @apply p-0 text-center;
+}
+
+.title {
+    @apply mb-[6px] text-[26px] font-bold leading-[1.2] text-primary;
+}
+
+.position {
+    @apply mb-[18px] text-sm font-medium leading-[1.2] text-primary;
+}
+
+.description {
+    @apply flex flex-col gap-4 text-left text-lg text-primary-dark font-gotham;
+}
+
+.socials {
+    @apply flex justify-center mx-auto
+}
