@@ -1,0 +1,21 @@
+.btnLetsTalk {
+    @apply mt-[35px] flex h-[54px] w-[178px] flex-row place-content-center items-center gap-[15px] rounded-full bg-[#84C0EF];
+}
+.btnHeroText {
+    @apply font-[Nunito-Sans] text-[22px] font-normal text-[#161616];
+}
+
+.titleHero {
+    @apply relative pt-[171px] text-center font-[Gilroy] text-[120px] font-bold text-[#161616];
+}
+.textHero {
+    @apply w-[684px] pt-[70px] text-center font-nunito text-[22px] font-normal text-[#161616];
+}
+
+.hero {
+    @apply bg-transparent shadow-none;
+}
+
+.lineHero {
+    @apply absolute bottom-0 left-0;
+}
