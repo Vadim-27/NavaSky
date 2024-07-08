@@ -1,5 +1,5 @@
 import scss from './Hero.module.scss';
-import { Box, Container, Link, List, ListItem, Stack, Typography } from '@mui/material';
+import { Box, Link, Stack, Typography } from '@mui/material';
 import Image from 'next/image';
 
 const Hero = () => {
