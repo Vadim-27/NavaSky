@@ -1,16 +1,18 @@
+import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 import { Box, Link, List, ListItem, Stack, Typography } from '@mui/material';
 import scss from './ContactsInfo.module.scss';
-import Image from 'next/image';
 
 const ContactsInfo = () => {
+    const t = useTranslations('Contacts');
     return (
         <Box component="section" className={scss.contacts}>
             <Box>
                 <Typography component="h3" className={scss.title}>
-                    How can we help?
+                    {t('title')}
                 </Typography>
                 <Typography component="p" className={scss.description}>
-                    Send us a message!
+                    {t('description')}
                 </Typography>
             </Box>
 
