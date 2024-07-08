@@ -5,8 +5,11 @@
     @apply font-[Nunito-Sans] text-[22px] font-normal text-[#161616];
 }
 
+.titleHeroText {
+    @apply pt-[171px] text-center font-[Gilroy] text-[120px] font-bold text-[#161616];
+}
 .titleHero {
-    @apply relative pt-[171px] text-center font-[Gilroy] text-[120px] font-bold text-[#161616];
+    @apply relative;
 }
 .textHero {
     @apply w-[684px] pt-[70px] text-center font-nunito text-[22px] font-normal text-[#161616];
@@ -17,5 +20,5 @@
 }
 
 .lineHero {
-    @apply absolute bottom-0 left-0;
+    @apply absolute bottom-[-8px] right-[50%] translate-x-[50%];
 }

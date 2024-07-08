@@ -6,16 +6,18 @@ const Hero = () => {
     return (
         <Box component="section" className={scss.hero}>
             <Stack direction="column" alignItems="center">
-                <Typography component="h1" className={scss.titleHero}>
-                    NavaSky
-                </Typography>
-                <Image
-                    className={scss.lineHero}
-                    src="/icons/lineHero.svg"
-                    width={380}
-                    height={43}
-                    alt="lineHero"
-                />
+                <div className={scss.titleHero}>
+                    <Typography component="h1" className={scss.titleHeroText}>
+                        NavaSky
+                    </Typography>
+                    <Image
+                        className={scss.lineHero}
+                        src="/icons/lineHero.svg"
+                        width={380}
+                        height={43}
+                        alt="lineHero"
+                    />
+                </div>
 
                 <Typography component="p" className={scss.textHero}>
                     We help brands scale by bringing date driven decisions and creativity together
