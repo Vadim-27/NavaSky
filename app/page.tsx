@@ -1,16 +1,7 @@
-import { Box } from '@mui/material';
-import OurServices from '@/components/OurServices';
-import Contacts from '@/components/Contacts';
-import Hero from '@/components/Hero';
+import { redirect } from 'next/navigation';
 
-const HomePage = () => {
-    return (
-        <Box component="main">
-            <Hero />
-            <OurServices />
-            <Contacts />
-        </Box>
-    );
+const RootPage = () => {
+    return redirect('/en');
 };
 
-export default HomePage;
+export default RootPage;

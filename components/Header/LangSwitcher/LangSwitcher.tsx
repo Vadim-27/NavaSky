@@ -1,16 +1,27 @@
 'use client';
-import { SyntheticEvent, useState } from 'react';
+import { SyntheticEvent, useState, useEffect } from 'react';
 import { ToggleButton, ToggleButtonGroup } from '@mui/material';
+import { useLocale } from 'next-intl';
+import { useRouter, usePathname } from 'next/navigation';
 import scss from './LangSwitcher.module.scss';
 
 const LangSwitcher = () => {
     const [alignment, setAlignment] = useState('en');
+    const router = useRouter();
+    const localeActive = useLocale();
+    const pathname = usePathname();
+
+    useEffect(() => {
+        setAlignment(localeActive);
+    }, [localeActive]);
 
     const handleChange = (_: SyntheticEvent, newAlignment: string) => {
-        if (newAlignment !== null) {
-            setAlignment(newAlignment);
+        if (newAlignment !== null && newAlignment !== localeActive) {
+            const newUrl = `/${newAlignment}${pathname.replace(`/${localeActive}`, '')}`;
+            router.push(newUrl);
         }
     };
+
     return (
         <ToggleButtonGroup
             value={alignment}
@@ -39,8 +50,8 @@ const LangSwitcher = () => {
                 Eng
             </ToggleButton>
             <ToggleButton
-                value="uk"
-                aria-label="uk"
+                value="ua"
+                aria-label="ua"
                 className={scss.switcherButton}
                 sx={{
                     '&.Mui-selected': {

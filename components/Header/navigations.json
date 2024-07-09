@@ -1,22 +1,22 @@
 [
     {
-        "label": "Why us",
+        "label": "Navigation.whyUs",
         "href": "#why-us"
     },
     {
-        "label": "Services",
+        "label": "Navigation.services",
         "href": "#services"
     },
     {
-        "label": "Projects",
+        "label": "Navigation.projects",
         "href": "#projects"
     },
     {
-        "label": "Team",
+        "label": "Navigation.team",
         "href": "#team"
     },
     {
-        "label": "Contacts",
+        "label": "Navigation.contacts",
         "href": "#contacts"
     }
 ]

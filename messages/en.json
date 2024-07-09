@@ -1,0 +1,15 @@
+{
+    "Header": {
+        "Navigation": {
+            "whyUs": "Why us",
+            "services": "Services",
+            "projects": "Projects",
+            "team": "Team",
+            "contacts": "Contacts"
+        }
+    },
+    "Contacts": {
+        "title": "How can we help?",
+        "description": "Send us a message!"
+    }
+}
