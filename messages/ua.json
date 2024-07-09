@@ -1,4 +1,13 @@
 {
+    "Header": {
+        "Navigation": {
+            "whyUs": "Чому ми?",
+            "services": "Послуги",
+            "projects": "Проєкти",
+            "team": "Команда",
+            "contacts": "Контакти"
+        }
+    },
     "Contacts": {
         "title": "Як ми можемо допомогти?",
         "description": "Надішліть нам повідомлення!"
