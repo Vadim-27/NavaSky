@@ -1,0 +1,27 @@
+.card {
+    @apply rounded-none text-center shadow-none;
+}
+
+.image {
+    @apply mx-auto mb-[15px] rounded-[20px];
+}
+
+.content {
+    @apply p-0;
+}
+
+.title {
+    @apply mb-[6px] text-[26px] font-bold leading-[1.2] text-primary;
+}
+
+.position {
+    @apply text-sm font-medium leading-[1.2] text-primary;
+}
+
+.button {
+    @apply mx-auto gap-[6px] text-base font-semibold normal-case leading-[1.2] text-blue-100 ;
+}
+
+.arrowIcon {
+    @apply w-[18px] h-[18px]
+}

@@ -1,0 +1,7 @@
+.modal {
+    @apply absolute left-1/2 top-1/2 w-[515px] -translate-x-1/2 -translate-y-1/2 rounded-3xl bg-gray-400 p-6 px-8 pb-7 pt-10;
+}
+
+.closeButton {
+    @apply absolute right-8 top-10;
+}
