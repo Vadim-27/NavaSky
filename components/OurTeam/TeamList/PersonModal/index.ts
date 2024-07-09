@@ -1,1 +1,1 @@
-export { default } from './PersonModal';
+export { default } from './PersonInfo';

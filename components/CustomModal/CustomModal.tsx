@@ -1,8 +1,8 @@
 import { FC, ReactNode } from 'react';
 import Image from 'next/image';
-import { Backdrop, Box, Fade, IconButton, Modal as ReactModal } from '@mui/material';
+import { Backdrop, Box, Fade, IconButton, Modal } from '@mui/material';
 import closeIcon from '@/public/icons/close.svg';
-import scss from './Modal.module.scss';
+import scss from './CustomModal.module.scss';
 
 interface ModalProps {
     modalIsOpen: boolean;
@@ -10,9 +10,9 @@ interface ModalProps {
     children: ReactNode;
 }
 
-const Modal: FC<ModalProps> = ({ modalIsOpen, closeModal, children }) => {
+const CustomModal: FC<ModalProps> = ({ modalIsOpen, closeModal, children }) => {
     return (
-        <ReactModal
+        <Modal
             aria-labelledby="transition-modal-title"
             aria-describedby="transition-modal-description"
             open={modalIsOpen}
@@ -37,8 +37,8 @@ const Modal: FC<ModalProps> = ({ modalIsOpen, closeModal, children }) => {
                     {children}
                 </Box>
             </Fade>
-        </ReactModal>
+        </Modal>
     );
 };
 
-export default Modal;
+export default CustomModal;

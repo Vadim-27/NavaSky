@@ -2,7 +2,7 @@
 import { Fragment, useState } from 'react';
 import { Button, Grid } from '@mui/material';
 import TeamListItem from './TeamListItem';
-import Modal from '@/components/Modal';
+import CustomModal from '@/components/CustomModal';
 import PersonModal from './PersonModal';
 import teamItems from '../team';
 import scss from './TeamList.module.scss';
@@ -41,9 +41,9 @@ const TeamList = () => {
             </Grid>
 
             {person && (
-                <Modal modalIsOpen={modalIsOpen} closeModal={() => setModalIsOpen(false)}>
+                <CustomModal modalIsOpen={modalIsOpen} closeModal={() => setModalIsOpen(false)}>
                     <PersonModal {...person} />
-                </Modal>
+                </CustomModal>
             )}
         </>
     );

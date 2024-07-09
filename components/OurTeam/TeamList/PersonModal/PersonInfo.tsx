@@ -13,9 +13,9 @@ import {
     Typography,
 } from '@mui/material';
 import { TeamItemProps } from '../TeamListItem';
-import scss from './PersonModal.module.scss';
+import scss from './PersonInfo.module.scss';
 
-const PersonModal: FC<TeamItemProps> = ({
+const PersonInfo: FC<TeamItemProps> = ({
     name,
     position,
     image,
@@ -78,4 +78,4 @@ const PersonModal: FC<TeamItemProps> = ({
     );
 };
 
-export default PersonModal;
+export default PersonInfo;
