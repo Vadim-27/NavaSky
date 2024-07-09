@@ -1,6 +1,7 @@
 import scss from './Hero.module.scss';
 import { Box, Link, Stack, Typography } from '@mui/material';
 import Image from 'next/image';
+import Mountain from './Mountain';
 
 const Hero = () => {
     return (
@@ -29,6 +30,7 @@ const Hero = () => {
                         <Image src="/icons/circle-arrow.svg" width={33} height={33} alt="Narrov" />
                     </Link>
                 </div>
+                <Mountain />
             </Stack>
         </Box>
     );
