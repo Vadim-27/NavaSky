@@ -3,7 +3,7 @@ import { Fragment, useState } from 'react';
 import { Button, Grid } from '@mui/material';
 import TeamListItem from './TeamListItem';
 import CustomModal from '@/components/CustomModal';
-import PersonModal from './PersonModal';
+import PersonInfo from './PersonInfo';
 import teamItems from '../team';
 import scss from './TeamList.module.scss';
 
@@ -42,7 +42,7 @@ const TeamList = () => {
 
             {person && (
                 <CustomModal modalIsOpen={modalIsOpen} closeModal={() => setModalIsOpen(false)}>
-                    <PersonModal {...person} />
+                    <PersonInfo {...person} />
                 </CustomModal>
             )}
         </>
