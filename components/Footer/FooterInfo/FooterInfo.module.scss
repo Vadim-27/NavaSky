@@ -1,0 +1,27 @@
+.contactList {
+    @apply flex flex-col gap-5 mb-5 p-0
+}
+
+.contactItem {
+    @apply flex items-center gap-3 p-0
+}
+
+.contactIcon {
+    @apply w-10 h-10
+}
+
+.contactInfo {
+    @apply font-gotham text-primary-dark text-base;
+}
+
+.socialList {
+    @apply flex items-center gap-6 p-0
+}
+
+.socialItem {
+    @apply p-0
+}
+
+.socialIcon {
+    @apply w-10 h-10
+}

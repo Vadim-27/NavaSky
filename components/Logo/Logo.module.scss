@@ -1,0 +1,11 @@
+.logo {
+    @apply text-3xl font-bold text-[#191919];
+
+    &Header {
+        @apply text-3xl;
+    }
+
+    &Footer {
+        @apply text-[40px];
+    }
+}

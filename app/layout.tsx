@@ -2,6 +2,7 @@ import { Box } from '@mui/material';
 import type { Metadata } from 'next';
 import '../styles/global.scss';
 import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
     title: 'Create Next App',
@@ -18,6 +19,7 @@ const RootLayout = ({
             <Box component="body">
                 <Header />
                 {children}
+                <Footer />
             </Box>
         </html>
     );
