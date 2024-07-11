@@ -7,9 +7,7 @@ const Hero = () => {
     return (
         <Box component="section" className={scss.hero}>
             <div className={scss.titleHero}>
-                <Typography component="h1" className={scss.titleHeroText}>
-                    NavaSky
-                </Typography>
+                <Typography className={scss.titleHeroText}>NavaSky</Typography>
                 <Image
                     className={scss.lineHero}
                     src="/icons/lineHero.svg"

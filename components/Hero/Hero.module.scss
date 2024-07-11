@@ -2,14 +2,14 @@
     @apply mt-[35px] flex h-[54px] w-[178px] flex-row place-content-center items-center gap-[15px] rounded-full bg-[#84C0EF] font-nunito;
 }
 .btnHeroText {
-    @apply font-[Nunito-Sans] text-[22px] font-normal text-[#161616];
+    @apply font-nunito text-[22px] font-normal text-[#161616];
 }
 
 .titleHeroText {
-    @apply pt-[171px] text-center font-gilroy text-[120px] font-bold text-[#161616];
+    @apply pt-[120px] text-center font-gilroy text-[120px] font-bold text-[#161616];
 }
 .titleHero {
-    @apply relative;
+    @apply relative w-full;
 }
 .textHero {
     @apply w-[684px] pt-[70px] text-center font-nunito text-[22px] font-normal text-[#161616];
