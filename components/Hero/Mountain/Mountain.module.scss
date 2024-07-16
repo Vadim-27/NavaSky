@@ -1,0 +1,22 @@
+.mountains {
+    @apply absolute left-0 top-0 -z-10 h-[1080px] w-[1600px] bg-[#EEF5FE];
+}
+
+.mountain1 {
+    @apply absolute bottom-0 left-0;
+}
+.mountain2 {
+    @apply absolute bottom-0 left-0;
+}
+.mountain3 {
+    @apply absolute bottom-[-4px] left-[163px];
+}
+.mountain4 {
+    @apply absolute bottom-[259.69px] left-0;
+}
+.mountain5 {
+    @apply absolute bottom-[260] left-[501];
+}
+.mountain6 {
+    @apply absolute bottom-[85] left-[920];
+}
