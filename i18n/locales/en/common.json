@@ -1,0 +1,9 @@
+{
+  "test": "test_envcxbc",
+  "buttons": {
+    "ok": "Ok",
+    "cancel": "Cancel",
+    "continue": "Continue",
+    "skip": "Skip"
+  }
+}
