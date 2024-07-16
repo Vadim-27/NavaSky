@@ -8,7 +8,7 @@ import { useTranslation } from '@/i18n/i18n';
 import { translations } from '@/i18n/i18n.constants';
 
 const LangSwitcher = () => {
-    const [alignment, setAlignment] = useState();
+    const [alignment, setAlignment] = useState<string>('en');
 
     const [cookies, setCookie] = useCookies(['i18next']);
 
@@ -22,9 +22,9 @@ const LangSwitcher = () => {
         i18next.changeLanguage(currentLanguage);
     }, [cookies]);
 
-    const handleChange = (_: SyntheticEvent, newAlignment: string) => {
+    const handleChange = (_: SyntheticEvent, newAlignment: string | null) => {
         if (newAlignment !== null) {
-            setAlignment(newAlignment as string);
+            setAlignment(newAlignment);
             i18next.changeLanguage(newAlignment).then(() => {
                 setCookie('i18next', newAlignment, { path: '/' });
             });
