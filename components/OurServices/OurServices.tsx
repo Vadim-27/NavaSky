@@ -6,7 +6,7 @@ import { useTranslation } from '@/i18n/i18n';
 import { translations } from '@/i18n/i18n.constants';
 
 const OurServices = () => {
-    const { t } = useTranslation([translations.ourServices]);
+    const { t } = useTranslation(translations.ourServices);
     return (
         <Box component="section" className="py-[60px]" id="services">
             <Container className="max-w-screen-large">
