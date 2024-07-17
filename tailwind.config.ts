@@ -23,6 +23,7 @@ const config: Config = {
                     100: '#eeeeee',
                     200: '#c8c8c8',
                     300: '#a8a8a8',
+                    400: '#d9d9d9',
                 },
             },
             fontFamily: {

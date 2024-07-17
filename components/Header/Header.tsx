@@ -1,5 +1,5 @@
 import { Box, Container, Stack } from '@mui/material';
-import Logo from './Logo';
+import Logo, { LogoStyle } from '../Logo';
 import navigationPages from './navigations.json';
 import Navigation from './Navigation';
 import LangSwitcher from './LangSwitcher';
@@ -15,7 +15,7 @@ const Header = () => {
                     alignItems="center"
                     className={scss.wrapper}
                 >
-                    <Logo />
+                    <Logo style={LogoStyle.Header} />
                     <Navigation pages={navigationPages} />
                     <LangSwitcher />
                 </Stack>

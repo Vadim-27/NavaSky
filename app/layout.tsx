@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import '../styles/global.scss';
 import AppProvider from './provide';
 import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
     title: 'Create Next App',
@@ -20,6 +21,7 @@ const RootLayout = ({
                 <AppProvider>
                     <Header />
                     {children}
+                    <Footer />
                 </AppProvider>
             </Box>
         </html>
