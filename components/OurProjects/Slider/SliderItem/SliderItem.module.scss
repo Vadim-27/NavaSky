@@ -1,0 +1,31 @@
+.sliderItem {
+    @apply flex items-center justify-between rounded-3xl border border-[#e4e4e4] bg-[#fbfbfb] px-24 py-8;
+}
+
+.number {
+    @apply mb-[60px] font-gilroy text-[30px] font-bold leading-[1.2];
+}
+
+.label {
+    @apply font-gilroy text-sm leading-[1.2];
+}
+
+.mainInfo {
+    @apply flex items-center gap-10;
+}
+
+.image {
+    @apply rounded-2xl;
+}
+
+.title {
+    @apply mb-4 text-[2.5rem] font-bold leading-[1.2];
+}
+
+.description {
+    @apply max-w-[378px] font-gilroy text-sm leading-[1.2];
+}
+
+.link {
+    @apply rounded-3xl bg-blue-100 px-[18px] py-2 font-gilroy text-lg font-medium capitalize shadow-none;
+}
