@@ -1,4 +1,4 @@
-import { Box, Container, Stack } from '@mui/material';
+import { Box, Container } from '@mui/material';
 import Logo, { LogoStyle } from '../Logo';
 import navigationPages from './navigations.json';
 import Navigation from './Navigation';
@@ -7,10 +7,10 @@ import scss from './Header.module.scss';
 
 const Header = () => {
     return (
-        <Box className={scss.header}>
+        <Box component="header" className={scss.header}>
             <Container className="max-w-screen-large">
-                <Stack
-                    direction="row"
+                <Box
+                    display="flex"
                     justifyContent="space-between"
                     alignItems="center"
                     className={scss.wrapper}
@@ -18,7 +18,7 @@ const Header = () => {
                     <Logo style={LogoStyle.Header} />
                     <Navigation pages={navigationPages} />
                     <LangSwitcher />
-                </Stack>
+                </Box>
             </Container>
         </Box>
     );
