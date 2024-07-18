@@ -15,7 +15,7 @@ const Mountain = () => {
                 <Image src="/icons/mount-3.svg" width={1437} height={349} alt="mount-3" />
             </div>
             <div className={scss.mountain4}>
-                <Image src="/icons/mount-4.svg" width={951.648} height={242.311} alt="mount-4" />
+                <Image src="/icons/mount-4.svg" width={952} height={243} alt="mount-4" />
             </div>
             <div className={scss.mountain5}>
                 <Image src="/icons/mount-5.svg" width={1099} height={299} alt="mount-5" />
