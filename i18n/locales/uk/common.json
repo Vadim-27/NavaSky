@@ -1,0 +1,9 @@
+{
+  "test": "Тест_юа",
+  "buttons": {
+    "ok": "Ok",
+    "cancel": "Cancel",
+    "continue": "Continue",
+    "skip": "Skip"
+  }
+}

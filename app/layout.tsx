@@ -1,6 +1,7 @@
 import { Box } from '@mui/material';
 import type { Metadata } from 'next';
 import '../styles/global.scss';
+import AppProvider from './provide';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
@@ -17,9 +18,11 @@ const RootLayout = ({
     return (
         <html lang="en">
             <Box component="body">
-                <Header />
-                {children}
-                <Footer />
+                <AppProvider>
+                    <Header />
+                    {children}
+                    <Footer />
+                </AppProvider>
             </Box>
         </html>
     );
