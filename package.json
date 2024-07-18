@@ -14,10 +14,10 @@
     "@hookform/resolvers": "^3.7.0",
     "@mui/icons-material": "^5.15.21",
     "@mui/material": "^5.15.21",
+    "clsx": "^2.1.1",
     "i18next": "^23.11.5",
     "i18next-browser-languagedetector": "^8.0.0",
     "i18next-resources-to-backend": "^1.2.1",
-    "clsx": "^2.1.1",
     "next": "14.2.4",
     "next-i18next": "^15.3.0",
     "next-intl": "^3.15.3",
@@ -26,6 +26,7 @@
     "react-dom": "^18",
     "react-hook-form": "^7.52.1",
     "react-i18next": "^14.1.2",
+    "react-material-ui-carousel": "^3.4.2",
     "yup": "^1.4.0"
   },
   "devDependencies": {
