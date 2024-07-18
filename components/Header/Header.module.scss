@@ -1,5 +1,5 @@
 .header {
-    @apply bg-transparent shadow-none;
+    @apply bg-transparent shadow-none absolute top-0 left-0 w-full z-10;
 }
 
 .wrapper {

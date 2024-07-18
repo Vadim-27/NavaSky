@@ -1,0 +1,51 @@
+.hero {
+    @apply relative flex min-h-[1080px] items-center justify-center overflow-hidden text-center;
+}
+
+.mainInfo {
+    @apply relative z-20;
+}
+
+.title {
+    @apply relative mb-10;
+}
+
+.titleText {
+    @apply relative z-20 text-[120px] font-bold leading-[1.2];
+}
+
+.titleLine {
+    @apply absolute -bottom-[10px] left-1/2 z-10 mx-auto -translate-x-1/2 pr-[6px];
+}
+
+.description {
+    @apply mx-auto mb-16 max-w-[728px] font-nunito text-[22px] leading-[1.2];
+}
+
+.link {
+    @apply rounded-3xl bg-blue-100 px-5 py-2 font-nunito text-[22px] normal-case text-[#0d0e11] shadow-none gap-[14px];
+}
+
+.arrowIcon {
+    @apply h-7 w-7 fill-[#0d0e11];
+}
+
+.scene {
+    @apply absolute bottom-0 left-0 right-0 top-0 h-full min-h-[1080px] w-full;
+}
+
+.layer {
+    @apply absolute bottom-0 left-[-10%] h-full w-[110%] bg-cover bg-center bg-no-repeat;
+}
+
+.bg {
+    @apply bg-[url('/images/hero/bg.jpg')];
+}
+
+.mountains_1 {
+    @apply bg-[url('/images/hero/mountains-1.png')];
+}
+
+.mountains_2 {
+    @apply bg-[url('/images/hero/mountains-2.png')];
+}
