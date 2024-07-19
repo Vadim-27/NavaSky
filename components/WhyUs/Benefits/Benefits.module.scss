@@ -1,0 +1,59 @@
+.benefits {
+    @apply relative rounded-[20px] bg-[#fafafa] px-16 py-10 min-h-[569px]
+}
+
+.title {
+    @apply font-gilroy text-[26px] font-semibold leading-[1.2];
+}
+
+.benefitsWrapper {
+    @apply relative mx-auto min-h-[338px] w-[1028px];
+}
+
+.benefitsItem {
+    @apply absolute;
+
+    &.quality {
+        @apply left-0 top-0;
+    }
+
+    &.individualism {
+        @apply left-[290px] top-[-50px];
+    }
+
+    &.creativity {
+        @apply left-[217px] top-[-31px];
+    }
+
+    &.support {
+        @apply left-[217px] top-[154px];
+    }
+}
+
+.chipBenefits {
+    @apply absolute z-20 min-w-[105px] rounded-xl border border-gray-200 bg-gray-100 px-4 py-1 text-center font-gotham text-primary-dark;
+
+    &.quality {
+        @apply -left-[12px] top-[136px];
+    }
+
+    &.individualism {
+        @apply left-[172px] top-[56px];
+    }
+
+    &.creativity {
+        @apply left-[565px] top-[83px];
+    }
+
+    &.support {
+        @apply left-[692px] top-[44px];
+    }
+
+    &.active {
+        @apply bg-blue-100 text-white;
+    }
+}
+
+.description {
+    @apply max-w-80 font-gotham text-[#676767];
+}

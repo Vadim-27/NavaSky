@@ -1,9 +1,9 @@
 import { Box } from '@mui/material';
 import type { Metadata } from 'next';
-import '../styles/global.scss';
 import AppProvider from './provide';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import '../styles/global.scss';
 
 export const metadata: Metadata = {
     title: 'Create Next App',
